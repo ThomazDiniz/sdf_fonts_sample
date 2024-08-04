@@ -13,13 +13,13 @@ if keyboard_check(vk_space){
 	direction = 0;
 }
 
-draw_text_transformed(room_width/2,room_height /4,
+draw_text_transformed(room_width/2,room_height/4,
 @"Isto daqui é um texto de exemplo,
 será desenhado sem SDF e sem efeito algum",
 _xs,_ys,_ang);
 
 draw_set_font(fnt_1_sdf);
-draw_text(room_width/2,3*room_height/4,
+draw_text_transformed(room_width/2,3*room_height/4,
 @"Já este texto aqui é com,
 SDF e Tem outline, dropshadow e glow",
 _xs, _ys, _ang);
